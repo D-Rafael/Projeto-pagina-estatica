@@ -1,0 +1,290 @@
+/* Reset de margens e preenchimentos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* Inclui margens e preenchimentos no cálculo do tamanho total dos elementos */
+}
+
+/* Estilo básico para fontes */
+body,
+button,
+input,
+select,
+textarea {
+  font-family: "Heebo", sans-serif;
+  /* Define a fonte padrão */
+}
+
+body {
+  background-color: #f7f7f7;
+  /* Define a cor de fundo do corpo da página */
+}
+
+/* Estilos do cabeçalho */
+header {
+  background-color: #dbd0d0b0;
+  /* Define a cor de fundo do cabeçalho */
+  height: 5rem;
+  /* Altura do cabeçalho */
+}
+
+header #navbar {
+  display: flex;
+  /* Define um layout flexível para o navbar */
+  justify-content: space-between;
+  /* Distribui espaço igualmente entre os elementos */
+  align-items: center;
+  /* Alinha os itens verticalmente ao centro */
+  padding: 0 2rem;
+  /* Preenchimento interno do navbar */
+  max-width: 1200px;
+  /* Largura máxima do navbar */
+  margin: 0 auto;
+  /* Centraliza o navbar horizontalmente */
+  height: 5rem;
+  /* Altura do navbar */
+}
+
+header #navbar .nav-brand {
+  text-decoration: none;
+  /* Remove a sublinhado do texto */
+  font-size: 1.5rem;
+  /* Tamanho da fonte */
+  font-weight: 700;
+  /* Peso da fonte (negrito) */
+  color: #333;
+  /* Cor do texto */
+}
+
+header #navbar .nav-list {
+  list-style: none;
+  /* Remove marcadores de lista */
+  display: flex;
+  /* Define um layout flexível para a lista */
+  align-items: center;
+  /* Alinha os itens verticalmente ao centro */
+  gap: 2rem;
+  /* Espaçamento entre os itens da lista */
+}
+
+header #navbar .nav-list .nav-item a {
+  text-decoration: none;
+  /* Remove a sublinhado do texto */
+  color: #333;
+  /* Cor do texto */
+  font-size: 1.3rem;
+  /* Tamanho da fonte */
+  font-weight: 500;
+  /* Peso da fonte */
+}
+
+header #navbar .nav-list .nav-item a:hover {
+  color: #777;
+  /* Cor do texto ao passar o mouse */
+  transition: 0.3s;
+  /* Transição suave */
+}
+
+header #navbar .hamburguer-menu {
+  display: none;
+  /* Esconde o menu hamburguer por padrão */
+}
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 740px) {
+  header #navbar .hamburguer-menu {
+    display: block;
+    /* Mostra o menu hamburguer em telas pequenas */
+  }
+
+  header #navbar .nav-list {
+    display: none;
+    /* Esconde a lista de navegação em telas pequenas */
+  }
+}
+
+/* SECTION BANNER */
+
+/* Estilos principais */
+main {
+  margin-top: 6rem;
+  /* Margem superior */
+}
+
+main #banner {
+  display: flex;
+  /* Define um layout flexível para o banner */
+  justify-content: space-between;
+  /* Distribui espaço igualmente entre os elementos */
+  max-width: 1200px;
+  /* Largura máxima do banner */
+  padding: 0 2rem;
+  /* Preenchimento interno do banner */
+  margin: 0 auto;
+  /* Centraliza o banner horizontalmente */
+}
+
+main #banner .banner-content .banner-content-title {
+  font-size: 2.75rem;
+  /* Tamanho da fonte */
+  font-weight: 700;
+  /* Peso da fonte (negrito) */
+  line-height: 3.8rem;
+  /* Altura da linha */
+  margin-bottom: 2.4rem;
+  /* Margem inferior */
+}
+
+main #banner .banner-content .banner-content-subtitle {
+  font-weight: 400;
+  /* Peso da fonte */
+  font-size: 1rem;
+  /* Tamanho da fonte */
+  line-height: 1.5rem;
+  /* Altura da linha */
+  max-width: 500px;
+  /* Largura máxima */
+  margin-bottom: 2.4rem;
+  /* Margem inferior */
+}
+
+main #banner .banner-content .banner-content-btn {
+  background-color: #00a8cc;
+  /* Cor de fundo do botão */
+  color: white;
+  /* Cor do texto */
+  font-size: 20px;
+  /* Tamanho da fonte */
+  font-weight: 500;
+  /* Peso da fonte */
+  border-radius: 2px;
+  /* Bordas arredondadas */
+  padding: 8px 24px;
+  /* Preenchimento interno */
+  border: none;
+  /* Sem borda */
+}
+
+main #banner .banner-image {
+  border-radius: 50%;
+  /* Imagem em formato circular */
+  width: 100%;
+  /* Largura total */
+  max-width: 300px;
+  /* Largura máxima */
+}
+
+/* Estilos responsivos para o banner */
+@media (max-width: 920px) {
+  main #banner {
+    flex-direction: column-reverse;
+    /* Altera a direção dos elementos */
+    align-items: center;
+    /* Alinha os itens ao centro */
+    gap: 2rem;
+    /* Espaçamento entre os itens */
+  }
+
+  main #banner .banner-content {
+    text-align: center;
+    /* Centraliza o texto */
+  }
+}
+
+/* SECTION POSTS */
+
+/* Estilos da seção de posts */
+section#posts {
+  margin-top: 71px;
+  /* Margem superior */
+  background: color #edf7fa;
+  /* Cor de fundo */
+}
+
+#posts .post-content {
+  max-width: 1200px;
+  /* Largura máxima */
+  padding: 0 2rem;
+  /* Preenchimento interno */
+  margin: 0 auto;
+  /* Centraliza o conteúdo horizontalmente */
+}
+
+#posts .post-content .post-content-header {
+  display: flex;
+  /* Define um layout flexível */
+  justify-content: space-between;
+  /* Distribui espaço igualmente entre os elementos */
+  align-items: center;
+  /* Alinha os itens verticalmente ao centro */
+  padding: 2rem 0;
+  /* Preenchimento interno */
+}
+
+#posts .post-content .post-content-header .section-title {
+  font-size: 22px;
+  /* Tamanho da fonte */
+  font-weight: 500;
+  /* Peso da fonte */
+}
+
+#posts .post-content .post-content-header .view-all-link {
+  text-decoration: none;
+  /* Remove a sublinhado do texto */
+  color: #00a8cc;
+  /* Cor do texto */
+}
+
+#posts .post-content .post-cards {
+  display: flex;
+  /* Define um layout flexível para os cartões */
+  gap: 1.2rem;
+  /* Espaçamento entre os cartões */
+  margin-bottom: 2rem;
+  /* Margem inferior */
+}
+
+#posts .post-content .post-cards .post-card {
+  background-color: #fff;
+  /* Cor de fundo dos cartões */
+  padding: 24px;
+  /* Preenchimento interno dos cartões */
+}
+
+#posts .post-content .post-cards .post-card h3 {
+  font-size: 26px;
+  /* Tamanho da fonte */
+  font-weight: 700;
+  /* Peso da fonte (negrito) */
+  margin-bottom: 37px;
+  /* Margem inferior */
+}
+
+#posts .post-content .post-cards .post-card span {
+  font-size: 18px;
+  /* Tamanho da fonte */
+  font-weight: 400;
+  /* Peso da fonte */
+  margin-bottom: 24px;
+  /* Margem inferior */
+  display: block;
+  /* Exibe o span como bloco */
+}
+
+#posts .post-content .post-cards .post-card p {
+  font-size: 16px;
+  /* Tamanho da fonte */
+  font-weight: 400;
+  /* Peso da fonte */
+}
+
+/* Estilos responsivos para os cartões de post */
+@media (max-width: 740px) {
+  #posts .post-content .post-cards {
+    flex-direction: column;
+    /* Altera a direção dos elementos para coluna */
+    align-items: center;
+    /* Alinha os itens ao centro */
+  }
+}
